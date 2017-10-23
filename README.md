@@ -8,7 +8,7 @@
 This assignment contains code to initiate a manual airline database that is organized into four different flights and is organized/optimized to work with differenct passengers. Optimization comes from the overriding of LinkedList into OrderedLinkedList where certain operations occur sooner vs wait times of an unorganized Linked List. 
 
 ### Clarifications on Instructions
-#### As of 10/20/2017
+#### As of 10/22/2017
 This section is made to stipulate certain typos and confusions pertaining to the assignment and its instructions in order to facilitate grading integrity. 
 
 1. N/A
