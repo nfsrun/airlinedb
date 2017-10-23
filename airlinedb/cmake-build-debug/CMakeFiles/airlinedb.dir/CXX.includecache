@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/super/CLionProjects/airlinedb/Launcher.cpp
+/cygdrive/d/Users/super/Dropbox/Bellevue College/CS300/airlinedb/airlinedb/Launcher.cpp
 OrderedLinkedList.h
-/cygdrive/c/Users/super/CLionProjects/airlinedb/OrderedLinkedList.h
+/cygdrive/d/Users/super/Dropbox/Bellevue College/CS300/airlinedb/airlinedb/OrderedLinkedList.h
 sstream
 -
+string
+-
 
-/cygdrive/c/Users/super/CLionProjects/airlinedb/LinkedList.h
+/cygdrive/d/Users/super/Dropbox/Bellevue College/CS300/airlinedb/airlinedb/LinkedList.h
 iostream
 -
 
-/cygdrive/c/Users/super/CLionProjects/airlinedb/OrderedLinkedList.h
+/cygdrive/d/Users/super/Dropbox/Bellevue College/CS300/airlinedb/airlinedb/OrderedLinkedList.h
 LinkedList.h
-/cygdrive/c/Users/super/CLionProjects/airlinedb/LinkedList.h
+/cygdrive/d/Users/super/Dropbox/Bellevue College/CS300/airlinedb/airlinedb/LinkedList.h
 

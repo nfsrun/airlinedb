@@ -1,6 +1,6 @@
 // Name         : Launcher.h
 // Author       : Kevin Tran
-// Version      : 1.01
+// Version      : 1.02 -- Fixed addresses with spaces input issue.
 // Description  : Launcher.cpp class runs the console program and ensures that inputs from the user are valid.
 // It runs as an instance and will perform the initial steps required for doing actions with the airline database such
 // as adding a passenger, deleting a passenger, searching for a passenger, listing passengers per flight number, and
@@ -8,6 +8,7 @@
 
 #include "OrderedLinkedList.h"
 #include <sstream>
+#include <string>
 using namespace std;
 
 //Passenger struct definition
@@ -142,14 +143,23 @@ public:
         flight_number_index=checkFlightNumber();
         last_name=checkLastName();
         first_name=checkFirstName();
+
+        //address will be entered through getLine so that it can cover spaced inputs
         cout<<"Enter address: ";
-        cin>>address;
+        cin.ignore(INTMAX_MAX, '\n');
+        getline(cin, address);
+
+        //phone
         cout<<endl<<"Enter phone: ";
         cin>>phone;
         cout<<endl;
         Passenger temp(last_name, first_name, address, phone);
         listLevels[flight_number_index].insert(temp);
     }
+
+    //structures
+    //data
+    //cs300
 
     //search method starts the steps to do searches a Passenger from the flight numbers.
     void search(){
