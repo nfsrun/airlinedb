@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Airline_Tracker.dir/Launcher.cpp.o CMakeFiles/Airline_Tracker.dir/OrderedLinkedList.cpp.o  -o Airline_Tracker.exe -Wl,--out-implib,libAirline_Tracker.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
