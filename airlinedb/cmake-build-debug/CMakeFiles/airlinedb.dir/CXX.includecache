@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/super/CLionProjects/airlinedb/Launcher.cpp
+OrderedLinkedList.h
+/cygdrive/c/Users/super/CLionProjects/airlinedb/OrderedLinkedList.h
+sstream
+-
+
+/cygdrive/c/Users/super/CLionProjects/airlinedb/LinkedList.h
+iostream
+-
+
+/cygdrive/c/Users/super/CLionProjects/airlinedb/OrderedLinkedList.h
+LinkedList.h
+/cygdrive/c/Users/super/CLionProjects/airlinedb/LinkedList.h
+
