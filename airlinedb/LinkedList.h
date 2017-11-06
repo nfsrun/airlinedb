@@ -1,8 +1,10 @@
 // Name         : LinkedList.h
 // Author       : Farma Serce
 // Modified     : Kevin Tran
-// Description  : LinkedList class provided by professor but search function has been added so it can be over-ridden in
-// child class OrderedLinkedList.h.
+// Description  : LinkedList class provided by professor but search function has
+// been added so it can be over-ridden in child class OrderedLinkedList.h.
+// Version 1.03 turns the destructor into a virtual function so that the
+// OrderedLinkedList can use the LinkedList destructors by adding the virtual.
 
 #ifndef AIRLINEDB_LINKEDLIST_H
 #define AIRLINEDB_LINKEDLIST_H
@@ -37,7 +39,7 @@ public:
     virtual T& search(T&);
     template <class U>
     friend ostream& operator<<(ostream& os, LinkedList<U>& list);
-    ~LinkedList();
+    virtual ~LinkedList();
 };
 
 //Default Constructor
@@ -156,7 +158,8 @@ ostream& operator<<(ostream& os, LinkedList<T>& list) {
     }
 }
 
-//added search method that searches for an item target and returns the item in the LinkedList.
+//added search method that searches for an item target and returns the item in
+//the LinkedList.
 template <class T>
 T& LinkedList<T>::search(T& t){
     node<T> *p = head;
@@ -169,7 +172,8 @@ T& LinkedList<T>::search(T& t){
     }
 }
 
-//Default destructor uses desroyList to simply delete the list and releases itself from memory.
+//Default destructor uses desroyList to simply delete the list and releases
+//itself from memory.
 template <class T>
 LinkedList<T>::~LinkedList(){
     destroylist();
